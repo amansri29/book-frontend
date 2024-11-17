@@ -1,0 +1,66 @@
+.book-list-container {
+    margin-left: 270px;  /* Ensure this aligns with the sidebar width */
+    padding: 20px;
+  }
+  
+  .book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+  }
+  
+  .book-item {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .book-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .book-item p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .book-actions {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .edit-btn,
+  .delete-btn {
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .edit-btn {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .edit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .delete-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c82333;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 1rem;
+  }
+  

@@ -1,0 +1,91 @@
+/* src/components/Dashboard/Sidebar.css */
+
+.sidebar {
+    width: 230px; /* Set sidebar width */
+    height: 100vh; /* Full height */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #007bff; /* Blue background */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .sidebar .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    padding-bottom: 10px;
+
+  }
+  
+  .sidebar .nav-link {
+    color: white;
+    padding: 10px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.2s ease;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .sidebar .nav-link:hover,
+  .sidebar .nav-link.active {
+    background-color: #0056b3;
+  }
+  
+  .sidebar .nav-link .react-icons {
+    margin-right: 10px;
+  }
+  
+  .sidebar .logout-btn {
+    margin-top: auto;
+    background-color: #dc3545; /* Red color for logout */
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+  }
+  
+  .sidebar .logout-btn:hover {
+    background-color: #c82333;
+  }
+  
+  .sidebar .username {
+    margin-top: 20px;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  /* Responsive layout for smaller screens */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 200px;
+      padding: 15px;
+    }
+  
+    .sidebar .nav-link {
+      font-size: 1rem;
+    }
+  
+    .sidebar .logout-btn {
+      font-size: 1rem;
+      padding: 8px;
+    }
+  
+    .sidebar .username {
+      font-size: 0.9rem;
+    }
+  }
+  

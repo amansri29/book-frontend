@@ -1,0 +1,46 @@
+/* src/components/Dashboard/Dashboard.css */
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .dashboard-content {
+    margin-left: 260px;
+    padding: 20px;
+    width: calc(100% - 260px);
+    box-sizing: border-box;
+  }
+  
+  .dashboard-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Pagination styling */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .pagination button:hover {
+    background-color: #0056b3;
+  }
+  
+  .pagination button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  
