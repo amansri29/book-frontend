@@ -1,0 +1,56 @@
+/* Basic Styling for Exchange List */
+.exchange-list-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  margin-left: 270px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.exchange-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.exchange-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.exchange-item p {
+  margin: 5px 0;
+}
+
+.actions {
+  margin-top: 10px;
+}
+
+button {
+  padding: 8px 16px;
+  margin: 5px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+}

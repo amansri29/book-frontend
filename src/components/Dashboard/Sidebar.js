@@ -34,7 +34,18 @@ const Sidebar = ({ username, activePage, onLogout }) => {
               <FaList /> My Listings
             </Link>
           </Nav.Item>
+       
+
+        <Nav.Item>
+            <Link
+              to="/exchanges"
+              className={`nav-link ${activePage === '/exchanges' ? 'active' : ''}`}
+            >
+              <FaList /> Exchanges
+            </Link>
+          </Nav.Item>
         </Nav>
+
         <Button variant="danger" onClick={onLogout} className="logout-btn">
           <FaSignOutAlt /> Logout
         </Button>

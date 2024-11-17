@@ -9,6 +9,7 @@ import ResetPasswordConfirm from './components/Auth/ResetPasswordConfirm';
 import BookList from './components/Book/BookList';
 import BookCreate from './components/Book/BookCreate';
 import BookUpdate from './components/Book/BookUpdate';
+import Exchanges from './components/Exchanges/Exchanges';
 
 const App = () => {
   const [username, setUsername] = React.useState('John Doe'); // Placeholder username, set dynamically later
@@ -16,7 +17,7 @@ const App = () => {
 
   const handleLogout = () => {
     localStorage.removeItem('token');
-    window.location.href = '/login'; // Redirect to login page after logout
+    window.location.href = '/'; // Redirect to login page after logout
   };
 
   return (
@@ -62,6 +63,16 @@ const App = () => {
             <div>
               <Sidebar username={username} activePage="/books/update/:id" onLogout={handleLogout} />
               <BookUpdate />
+            </div>
+          }
+        />
+
+      <Route
+          path="exchanges"
+          element={
+            <div>
+              <Sidebar username={username} activePage="/Exchanges" onLogout={handleLogout} />
+              <Exchanges />
             </div>
           }
         />
